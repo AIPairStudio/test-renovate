@@ -9,8 +9,8 @@
       "groupName": "GitHub Actions",
       "matchManagers": [
         "github-actions"
-      ]
+      ],
+      "platformAutomerge": true
     }
-  ],
-  "platformAutomerge": true
+  ]
 }
