@@ -1,6 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>LifeTechEase/renovate-config"
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "automerge": true,
+      "groupName": "GitHub Actions",
+      "matchManagers": [
+        "github-actions"
+      ]
+    }
   ]
 }
