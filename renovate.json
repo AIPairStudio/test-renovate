@@ -11,6 +11,22 @@
         "github-actions"
       ],
       "platformAutomerge": true
+    },
+    {
+      "automerge": true,
+      "groupName": "pre-commit",
+      "matchManagers": [
+        "pre-commit"
+      ],
+      "platformAutomerge": true
+    },
+    {
+      "automerge": true,
+      "groupName": "pre-commit",
+      "matchManagers": [
+        "pyenv"
+      ],
+      "platformAutomerge": true
     }
   ]
 }
