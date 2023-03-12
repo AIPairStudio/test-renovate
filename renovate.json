@@ -44,5 +44,8 @@
       "matchUpdateTypes": ["patch"],
       "addLabels": ["patch"]
     }
+  ],
+  "labels": [
+    "renovate"
   ]
 }
