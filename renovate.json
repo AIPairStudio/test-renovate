@@ -11,7 +11,8 @@
         "github-actions"
       ],
       "automergeType": "pr",
-      "platformAutomerge": true
+      "platformAutomerge": true,
+      "addLabels": ["github-actions"]
     },
     {
       "automerge": true,
@@ -19,7 +20,8 @@
       "matchManagers": [
         "pre-commit"
       ],
-      "platformAutomerge": true
+      "platformAutomerge": true,
+      "addLabels": ["pre-commit"]
     },
     {
       "automerge": true,
@@ -27,7 +29,20 @@
       "matchManagers": [
         "pyenv"
       ],
-      "platformAutomerge": true
+      "platformAutomerge": true,
+      "addLabels": ["pyenv"]
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "addLabels": ["major"]
+    },
+    {
+      "matchUpdateTypes": ["minor"],
+      "addLabels": ["minor"]
+    },
+    {
+      "matchUpdateTypes": ["patch"],
+      "addLabels": ["patch"]
     }
   ]
 }
