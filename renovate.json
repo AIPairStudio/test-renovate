@@ -10,6 +10,7 @@
       "matchManagers": [
         "github-actions"
       ],
+      "automergeType": "pr",
       "platformAutomerge": true
     },
     {
