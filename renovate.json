@@ -11,7 +11,6 @@
         "github-actions"
       ],
       "automergeType": "pr",
-      "platformAutomerge": true,
       "addLabels": ["github-actions"]
     },
     {
@@ -20,7 +19,6 @@
       "matchManagers": [
         "pre-commit"
       ],
-      "platformAutomerge": true,
       "addLabels": ["pre-commit"]
     },
     {
@@ -29,24 +27,21 @@
       "matchManagers": [
         "pyenv"
       ],
-      "platformAutomerge": true,
       "addLabels": ["pyenv"]
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "addLabels": ["major"]
-    },
-    {
-      "matchUpdateTypes": ["minor"],
-      "addLabels": ["minor"]
-    },
-    {
-      "matchUpdateTypes": ["patch"],
-      "addLabels": ["patch"]
     }
   ],
   "labels": [
     "renovate"
   ],
-  "automergeStrategy": "squash"
+  "automergeStrategy": "squash",
+  "platformAutomerge": true,
+  "major": {
+    "addLabels": ["patch"]
+  },
+  "minor": {
+    "addLabels": ["minor"]
+  },
+  "patch": {
+    "addLabels": ["patch"]
+  }
 }
