@@ -47,5 +47,6 @@
   ],
   "labels": [
     "renovate"
-  ]
+  ],
+  "automergeStrategy": "squash"
 }
